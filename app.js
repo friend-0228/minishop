@@ -3,7 +3,7 @@ import connect from './schemas/index.js';
 import products from './routes/products.router.js';
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 connect();
 
