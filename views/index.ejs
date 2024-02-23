@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>miniShop</title>
+    </head>
+    <body>
+        <div>
+            <!-- 상품 등록 폼 -->
+            <form id="productForm">
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="상품명"
+                    required
+                />
+                <br />
+                <input type="text" id="content" placeholder="내용" required />
+                <br />
+                <input
+                    type="text"
+                    id="userName"
+                    placeholder="작성자명"
+                    required
+                />
+                <br />
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="비밀번호"
+                    required
+                />
+                <select id="status" required>
+                    <option value="FOR_SALE" defaulted>판매 중</option>
+                    <option value="SOLD_OUT">판매 완료</option>
+                </select>
+                <button type="submit">상품 등록</button>
+            </form>
+        </div>
+
+        <!-- 상품 목록 표시 -->
+        <div id="productList"></div>
+    </body>
+</html>
