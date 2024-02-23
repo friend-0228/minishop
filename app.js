@@ -12,7 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+// router.get(...)
+app.get('/', (req, res) => {
     return res.json({ message: 'Hi!' });
 });
 
