@@ -25,6 +25,7 @@ router.get('/', (req, res) => {
     return res.json({ message: 'Hi!' });
 });
 
+
 app.use('/api', [router, products]);
 
 // 에러 처리 미들웨어를 등록한다.
